@@ -6,14 +6,34 @@
 // this function to have.
 // Execute `rustlings hint errors1` for hints!
 
+<<<<<<< Updated upstream
 // I AM NOT DONE
 
 pub fn generate_nametag_text(name: String) -> Option<String> {
     if name.len() > 0 {
         Some(format!("Hi! My name is {}", name))
     } else {
+||||||| Stash base
+// I AM NOT DONE
+
+pub fn generate_nametag_text(name: String) -> Option<String> {
+    if name.is_empty() {
+=======
+pub fn generate_nametag_text(name: String) -> Result<String, String> {
+    if name.is_empty() {
+>>>>>>> Stashed changes
         // Empty names aren't allowed.
+<<<<<<< Updated upstream
         None
+||||||| Stash base
+        None
+    } else {
+        Some(format!("Hi! My name is {}", name))
+=======
+        Err("`name` was empty; it must be nonempty.".into())
+    } else {
+        Ok(format!("Hi! My name is {}", name))
+>>>>>>> Stashed changes
     }
 }
 

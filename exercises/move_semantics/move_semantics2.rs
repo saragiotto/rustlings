@@ -2,12 +2,18 @@
 // Make me compile without changing line 13!
 // Execute `rustlings hint move_semantics2` for hints :)
 
-// I AM NOT DONE
-
 fn main() {
     let vec0 = Vec::new();
 
+<<<<<<< Updated upstream
     let mut vec1 = fill_vec(vec0);
+||||||| Stash base
+    // Do not move the following line!
+    let mut vec1 = fill_vec(vec0);
+=======
+    // Do not move the following line!
+    let mut vec1 = fill_vec(vec0.clone());
+>>>>>>> Stashed changes
 
     // Do not change the following line!
     println!("{} has length {} content `{:?}`", "vec0", vec0.len(), vec0);

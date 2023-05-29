@@ -3,8 +3,6 @@
 // exercise we have defined the Package struct and we want to test some logic attached to it,
 // make the code compile and the tests pass! If you have issues execute `rustlings hint structs3`
 
-// I AM NOT DONE
-
 #[derive(Debug)]
 struct Package {
     sender_country: String,
@@ -21,12 +19,20 @@ impl Package {
         }
     }
 
-    fn is_international(&self) -> ??? {
-        // Something goes here...
+    fn is_international(&self) -> bool {
+        self.recipient_country != self.sender_country
     }
 
+<<<<<<< Updated upstream
     fn get_fees(&self, cents_per_kg: i32) -> ??? {
         // Something goes here... (beware of grams to kg conversion)
+||||||| Stash base
+    fn get_fees(&self, cents_per_gram: i32) -> ??? {
+        // Something goes here...
+=======
+    fn get_fees(&self, cents_per_gram: i32) -> i32 {
+        self.weight_in_grams * cents_per_gram
+>>>>>>> Stashed changes
     }
 }
 

@@ -10,16 +10,26 @@
 // No boiler plate code this time,
 // you can do this!
 
-// I AM NOT DONE
-
 trait AppendBar {
     fn append_bar(self) -> Self;
 }
 
+<<<<<<< Updated upstream
 //TODO: Add your code here
 
 
 
+||||||| Stash base
+// TODO: Implement trait `AppendBar` for a vector of strings.
+=======
+// TODO: Implement trait `AppendBar` for a vector of strings.
+impl AppendBar for Vec<String> {
+    fn append_bar(mut self) -> Self {
+        self.push("Bar".to_string());
+        self
+    }
+}
+>>>>>>> Stashed changes
 
 #[cfg(test)]
 mod tests {

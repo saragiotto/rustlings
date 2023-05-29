@@ -1,11 +1,18 @@
 // modules2.rs
 // Make me compile! Execute `rustlings hint modules2` for hints :)
 
-// I AM NOT DONE
-
 mod delicious_snacks {
+<<<<<<< Updated upstream
     use self::fruits::PEAR as fruit;
     use self::veggies::CUCUMBER as veggie;
+||||||| Stash base
+    // TODO: Fix these use statements
+    use self::fruits::PEAR as ???
+    use self::veggies::CUCUMBER as ???
+=======
+    pub use self::fruits::PEAR as fruit;
+    pub use self::veggies::CUCUMBER as veggie;
+>>>>>>> Stashed changes
 
     mod fruits {
         pub const PEAR: &'static str = "Pear";

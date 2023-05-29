@@ -8,14 +8,29 @@
 // which appends "Bar" to any object
 // implementing this trait.
 
+<<<<<<< Updated upstream
 // I AM NOT DONE
+||||||| Stash base
+// I AM NOT DONE
+
+=======
+>>>>>>> Stashed changes
 trait AppendBar {
     fn append_bar(self) -> Self;
 }
 
 impl AppendBar for String {
+<<<<<<< Updated upstream
     //Add your code here
 
+||||||| Stash base
+    // TODO: Implement `AppendBar` for type `String`.
+=======
+    // TODO: Implement `AppendBar` for type `String`.
+    fn append_bar(self) -> Self {
+        self + "Bar"
+    }
+>>>>>>> Stashed changes
 }
 
 fn main() {
